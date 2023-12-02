@@ -15,7 +15,7 @@ const Splash = ({ navigation }) => {
         animation="zoomInDown" 
         duration={2000} 
         delay={200}
-        style={{ resizeMode:'cover',height:200,width:200 ,borderRadius:40}}
+        style={{ resizeMode:'cover',height:300,width:300 ,borderRadius:40}}
         source={require('../Images/logo.png')}
       >
 

@@ -3,7 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Splash from './Screens/Splash';
 import Login from './Screens/Login';
-import HelloWorld from './Screens/Helloword';
+import HelloWorld from './Screens/HomeScreen';
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
