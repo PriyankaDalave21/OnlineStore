@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View, ScrollView, Pressable, ImageBackground } from 'react-native';
 import React from 'react';
 import quickfood from '../data/quickfood';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const QuickFood = () => {
     const data = quickfood;
     return (
         <View style={{ margin: 10 }}>
             <Text style={{ fontSize: 16, fontWeight: '500' }}>TOP RATED NAER YOU</Text>
-            <ScrollView >
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {data.map((item, index) => (
                     <Pressable style={{ margin: 10 }} key={index}>
                         <ImageBackground imageStyle={{ borderRadius: 8 }} style={{ height: 200 }} source={{ uri: item.image }}>
@@ -29,7 +29,7 @@ const QuickFood = () => {
                             {item.name}
                         </Text>
                         <View style={{ flexDirection: "row", alignItems: "center", marginTop: 3 }}>
-                            <Icon name="star" size={20} color="green" />
+                        <MaterialIcons name="stars" size={24} color="green" />
                             <Text style={{ marginLeft: 3, fontSize: 15, fontWeight: "400" }}>{item.rating}</Text>
                             <Text style={{ marginLeft: 3 }}>•</Text>
                             <Text style={{ marginLeft: 3, fontSize: 15, fontWeight: "400" }}>{item.time}mins</Text>

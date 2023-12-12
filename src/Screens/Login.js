@@ -17,7 +17,7 @@ const Login = ({ navigation }) => {
     } else if (!otpRegex.test(otp)) {
       setError('Invalid OTP. Please enter a 4-digit OTP.');
     } else if (otp === hardcodedOTP) {
-      navigation.replace('HelloWorld');
+      navigation.replace('Home');
     } else {
       setError('Incorrect OTP. Please try again.');
     }
